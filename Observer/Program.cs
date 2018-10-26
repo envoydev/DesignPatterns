@@ -5,6 +5,10 @@ namespace Observer
 {
     class Program
     {
+        //Main idea of Observe pattern is to notify of followers(subscribes, other classes who subscibed) 
+        //about changes of main observable class. The observable class shoul have method that shows changes
+        //and mehtod implemented method to notify followers about the changes and show this changes
+
         static void Main(string[] args)
         {
             //Create newsObserve object

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Abstract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{D5D21556-96D0-416B-8E6C-FE6B03CCDEB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{406BD31D-74E5-41FF-BAB5-B7C0BAC1E42A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{406BD31D-74E5-41FF-BAB5-B7C0BAC1E42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{05D651A7-5E85-4945-BDA6-379B866549C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{406BD31D-74E5-41FF-BAB5-B7C0BAC1E42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{406BD31D-74E5-41FF-BAB5-B7C0BAC1E42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{406BD31D-74E5-41FF-BAB5-B7C0BAC1E42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D651A7-5E85-4945-BDA6-379B866549C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D651A7-5E85-4945-BDA6-379B866549C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D651A7-5E85-4945-BDA6-379B866549C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D651A7-5E85-4945-BDA6-379B866549C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
