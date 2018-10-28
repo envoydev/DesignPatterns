@@ -5,22 +5,18 @@ namespace Decorator.Ingridients
 {
     class MeetIngredient : IngredientsDecorator
     {
-        private readonly BasePizza _basePizza;
-
-        public MeetIngredient(BasePizza basePizza)
+        public MeetIngredient(BasePizza basePizza) : base(basePizza)
         {
-            _basePizza = basePizza;
-
             KindOfIngridient = "meet";
-            CostOfIngridientPerSize = 0.8;
-            Size = _basePizza.Size;
+            CostOfIngridientPerSize = 0.3;
+            Size = BasePizza.Size;
 
-            Description = string.Join(" + ", _basePizza.Discribe(), KindOfIngridient);
+            Description = string.Join(" + ", BasePizza.Discribe(), KindOfIngridient);
         }
 
         public override double Price()
         {
-            return _basePizza.Price() + GetCostOfIngridientPerSize();
+            return BasePizza.Price() + GetCostOfIngridientPerSize();
         }
 
         protected override double GetCostOfIngridientPerSize()

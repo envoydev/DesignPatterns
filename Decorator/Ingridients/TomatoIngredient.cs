@@ -5,22 +5,18 @@ namespace Decorator.Ingridients
 {
     class TomatoIngredient : IngredientsDecorator
     {
-        private readonly BasePizza _basePizza;
-
-        public TomatoIngredient(BasePizza basePizza)
+        public TomatoIngredient(BasePizza basePizza) : base(basePizza)
         {
-            _basePizza = basePizza;
-
             KindOfIngridient = "tomato";
-            CostOfIngridientPerSize = 0.15;
-            Size = _basePizza.Size;
+            CostOfIngridientPerSize = 0.13;
+            Size = BasePizza.Size;
 
-            Description = string.Join(" + ", _basePizza.Discribe(), KindOfIngridient);
+            Description = string.Join(" + ", BasePizza.Discribe(), KindOfIngridient);
         }
 
         public override double Price()
         {
-            return _basePizza.Price() + GetCostOfIngridientPerSize();
+            return BasePizza.Price() + GetCostOfIngridientPerSize();
         }
 
         protected override double GetCostOfIngridientPerSize()
