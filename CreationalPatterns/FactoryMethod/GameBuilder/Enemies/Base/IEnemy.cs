@@ -1,4 +1,4 @@
-﻿namespace FactoryMethod.Game.Enemies.Base
+﻿namespace FactoryMethod.GameBuilder.Enemies.Base
 {
     public interface IEnemy
     {

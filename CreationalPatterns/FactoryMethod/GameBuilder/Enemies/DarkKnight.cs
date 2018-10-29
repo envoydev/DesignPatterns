@@ -1,12 +1,12 @@
-﻿using FactoryMethod.Game.Enemies.Base;
+﻿using FactoryMethod.GameBuilder.Enemies.Base;
 
-namespace FactoryMethod.Game.Enemies
+namespace FactoryMethod.GameBuilder.Enemies
 {
     public class DarkKnight : IEnemy
     {
         public string BattleRoar()
         {
-            return "For the datrk king";
+            return "For the dark lord";
         }
 
         public string Power()

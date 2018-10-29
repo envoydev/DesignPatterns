@@ -1,6 +1,6 @@
-﻿using FactoryMethod.Game.Enemies.Base;
+﻿using FactoryMethod.GameBuilder.Enemies.Base;
 
-namespace FactoryMethod.Game.Enemies
+namespace FactoryMethod.GameBuilder.Enemies
 {
     public class DarkDragon : IEnemy
     {

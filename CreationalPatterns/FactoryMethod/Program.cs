@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FactoryMethod.GameBuilder;
+using FactoryMethod.GameBuilder.DifficultyFactories;
+using FactoryMethod.GameBuilder.Locations;
 
 namespace FactoryMethod
 {
@@ -6,7 +8,9 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game newGame = new Game();
+            newGame.Start(new EasyLevel(), new DarkCastle());
+            newGame.Start(new MiddleLevel(), new DarkCastle());
         }
     }
 }
