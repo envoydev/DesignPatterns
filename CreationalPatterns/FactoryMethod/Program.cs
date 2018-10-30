@@ -10,7 +10,7 @@ namespace FactoryMethod
         {
             Game newGame = new Game();
             newGame.Start(new EasyLevel(), new DarkCastle());
-            newGame.Start(new MiddleLevel(), new DarkCastle());
+            newGame.Start(new MediumLevel(), new DarkCastle());
         }
     }
 }

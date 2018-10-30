@@ -4,7 +4,7 @@ using FactoryMethod.GameBuilder.Factory;
 
 namespace FactoryMethod.GameBuilder.DifficultyFactories
 {
-    public class MiddleLevel : IEnemyFactory
+    public class MediumLevel : IEnemyFactory
     {
         public IEnemy Create()
         {
@@ -13,7 +13,7 @@ namespace FactoryMethod.GameBuilder.DifficultyFactories
 
         public override string ToString()
         {
-            return "Middle level";
+            return "Medium level";
         }
     }
 }

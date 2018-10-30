@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AbstractFactory.Car;
+using AbstractFactory.Car.ModelFactory;
+using System;
 
 namespace AbstractFactory
 {
@@ -6,7 +8,16 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CarBuilder car = new CarBuilder();
+            car.Build(new PassatFactory());
+
+            Console.WriteLine("-------------");
+
+            car.Build(new GTIFactory());
+
+            Console.WriteLine("-------------");
+
+            car.Build(new AmeoFactory());
         }
     }
 }
